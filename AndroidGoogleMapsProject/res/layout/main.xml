@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--   <supports-screens
+android:largeScreens="true"
+android:normalScreens="true"
+android:smallScreens="true"
+android:resizeable="true"
+android:anyDensity="false"
+/>
+
+???
+-->
+
+<!-- gute Erklärung Layouts http://mobileorchard.com/android-app-development-layouts-part-one-linear-and-relative-layouts/ -->
+<!-- Layout explanation //http://developer.android.com/resources/tutorials/views/index.html -->
+	<!-- and http://www.brighthub.com/mobile/google-android/articles/22948.aspx -->
+
+<!-- TO DO: -->
+	<!-- eine globale style-vorgabe für alle buttons erstellen?? -->
+	<!-- modify panel style ! make it more perfect -->
+
+
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<com.google.android.maps.MapView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/map_view"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:clickable="true" 
+		android:enabled="true" 
+		android:apiKey="0G-zPknk8oeSmzBKGoOW23i0ZWxvbecUglozj0Q" />
+		
+<!-- main panel  -->		
+	<com.javacodegeeks.android.googlemaps.TransparentPanel
+				android:id="@+id/transparent_panel" 
+	    	    android:layout_width="fill_parent"
+	        	android:layout_height="wrap_content"
+	        	 android:layout_weight="1"	
+	        	android:paddingTop="5px"
+	        	android:paddingLeft="5px"
+				android:paddingBottom="5px"
+				android:paddingRight="5px"
+				xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+				<Button 
+				android:id="@+id/button2_add"
+				android:layout_gravity="right" 
+				android:layout_height="50px" 
+				android:layout_width="70px" 
+				android:text="Add"	
+				android:textSize="12dp"
+				/>	
+				
+				<Button 
+				android:id="@+id/button3_remove"
+				android:layout_gravity="right" 
+				android:layout_height="50px" 
+				android:layout_width="70px" 
+				android:text="remove"	
+				android:textSize="12dp"
+				/>	
+				
+				<Button 
+				android:id="@+id/button_info"
+				android:layout_gravity="right" 
+				android:layout_height="50px" 
+				android:layout_width="70px" 
+				android:text="Info"	
+				android:textSize="12dp"
+				/>	
+
+
+		</com.javacodegeeks.android.googlemaps.TransparentPanel>
+
+</RelativeLayout>
+
+

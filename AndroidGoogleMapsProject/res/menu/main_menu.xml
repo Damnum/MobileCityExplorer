@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">   
+    <item android:id="@+id/general"
+    	  android:icon="@drawable/general"
+    	  android:title="@string/general" />  
+    <item android:id="@+id/church"
+   		  android:icon="@drawable/church"
+          android:title="@string/church" />  
+    <item android:id="@+id/restaurant"
+          android:icon="@drawable/restaurant"
+          android:title="@string/restaurant" />  
+       
+</menu>
