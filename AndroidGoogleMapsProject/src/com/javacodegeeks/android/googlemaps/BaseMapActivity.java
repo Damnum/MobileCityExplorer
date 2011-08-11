@@ -11,7 +11,6 @@ public abstract class BaseMapActivity extends MapActivity{
 	
 	private MyItemizedOverlay itemizedOverlay;
 	
-
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 	    MenuInflater inflater = getMenuInflater();
